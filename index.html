@@ -31,6 +31,21 @@ body{
   display:flex;
   flex-direction:column;
 }
+
+.bg-banner{
+  position:fixed;
+  inset:-5vh -5vw;
+  width:110vw;
+  height:110vh;
+  background-image:url("keycheats-background-banner.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  opacity:.25;
+  filter:blur(50px);
+  z-index:-1;
+  pointer-events:none;
+}
 a{color:var(--white);text-decoration:none}
 img{max-width:100%;display:inline-block}
 h1{margin:0}
@@ -205,6 +220,8 @@ h1{margin:0}
 </style>
 </head>
 <body>
+
+<div class="bg-banner" aria-hidden="true"></div>
 
 <!-- ====== TikTok-iOS escape overlay ====== -->
 <div class="escape-overlay" id="escape-overlay">
